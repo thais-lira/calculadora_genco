@@ -107,6 +107,12 @@ input[type=text], select {
   margin: 0.5rem 0 0.5rem 0; /*Top - Right - Bottom - Left*/
 }
 
+input[type=text], select {
+  height: 2.3rem;
+  width: 100%;
+  margin: 0.8rem 0 0.8rem 0; ; /*Top - Right - Bottom - Left*/
+}
+
 @media(min-width:62rem){
   .container--form{
     padding: 2rem 0 0 4rem;
@@ -117,9 +123,9 @@ input[type=text], select {
   }
 
   input[type=text], select {
-    height: 2.3rem;
-    width: 10rem;
+    width: 50%;
   }
+
 }
 
 /*
@@ -132,6 +138,20 @@ input[type=text], select {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.s-formats--container{
+  width: 95%;
+  margin: 1rem auto;   /* Top/Bottom - Right/Left*/
+}
+
+.s-formats--form-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0 1rem 0;
 }
 
 .s-formats--title{
@@ -148,18 +168,45 @@ input[type=text], select {
   text-align: center;
 }
 
-.s-formats--container{
+.text{
+  text-align: center;
+  padding: 1rem;
+}
+
+.circle, .square{
+  width: 7rem;
+  height: 7rem;
+  background-color: var(--bluelight);
+  border: 4px solid var(--Gray);
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+
+.circle{
+  border-radius: 7rem;
+}
+
+.image--icon{
+  width: 1.8rem;
+}
+
+.text--icon{
+  margin: 1rem 0 0 0;/* Top - Right - Bottom - Left*/
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.button--form{   
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 1.5rem 0; /* Top - Right - Bottom - Left*/
 }
 
 
 @media(min-width:62rem){
   .s-formats--image{
-    background: url("/assets/image/enis-yavuz-JhcQHSBMask-unsplash.jpg") no-repeat center/cover;
-    height: 100vh;
-    width: 50%;
+    height: 70vh;
   }
 
   .s-formats--title{
@@ -168,25 +215,28 @@ input[type=text], select {
 
   .s-formats--subtitle{
     font-size: 1.8em;
-    text-align: left;
+    margin: 1.8rem 0 1.8rem 0; /*Top - Right - Bottom - Left*/
   }
 
   .s-formats--container{
-    height: 40rem;
-    width: 50%;
-    padding: 0 0 0 5rem;/* Top - Right - Bottom - Left*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    width: 90%;
+    margin: 2rem auto;    /* Top/Bottom - Right/Left*/
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.096);
   }
 
   .s-formats--form-box{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    gap: 3rem;
+    padding: 1rem;
   }
 
-  .section--formats{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  .button--form{
+    margin: 1rem 0 2rem 0; /* Top - Right - Bottom - Left*/
   }
-
 }
