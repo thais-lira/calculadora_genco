@@ -5,6 +5,11 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+
+
 :root{
   --lightGray: #E7ECEF;
   --Gray: #79868d;
@@ -14,19 +19,8 @@
 
 .main, .body{
   background-color: var(--lightGray);
+  line-height: 2;
 }
-
-.link{
-  color: var(--Gray);
-  text-decoration: none; 
-  transition: all 0.5s ease-in-out;
-}
-
-.link:hover{
-  text-decoration: underline;
-  text-decoration-color: #79868d;
-}
-
 
 
 
