@@ -45,26 +45,21 @@
               <img src="assets/image/icons8-pato.png" alt="" class="image--icon">
             </div> 
 
-            <form class="form_calc">
-              <label for="calculate_width">Largura:</label>
-              <input type="text" id="calculate_width" class="number_calc" placeholder="metro(s)"> 
+            <form class="form--calc-squard">
+              <label for="squard--width">Largura:</label>
+              <input type="text" id="squard--width" placeholder="metro(s)" class="squard--input"> 
 
-              <br>
-
-              <label for="calculate_length">Comprimento: </label>
-              <input type="text" id="calculate_length" class="number_calc" placeholder="metro(s)
-              ">
+              <label for="squard--height">Comprimento: </label>
+              <input type="text" id="squard--height" placeholder="metro(s)" class="squard--input">
   
-              <br>
-
-              <label for="calculate_depth_squard">Profundidade: </label>
-              <input type="text" id="calculate_depth_squard" class="number_calc" placeholder="metro(s)
-              ">
+              <label for="squard--depth">Profundidade: </label>
+              <input type="text" id="squard--depth" placeholder="metro(s)" class="squard--input">
             </form>
+
           </div>
             <!--Button -- calculate Diameter Squard-->
             <div class="button--form"> 
-              <input type="submit" value="CALCULAR" class="btn" onclick="calculateDiameterSquard()"> 
+              <input type="submit" value="CALCULAR" class="btn" onclick="calculateSquard()"> 
             </div>
         </div>
 
@@ -73,33 +68,29 @@
           <p class="text--icon">Oval ou Redonda</p>
           <div class="s-formats--form-box">
 
-            <div class="circle" >
+            <div class="circle">
               <img src="assets/image/icons8-boia.png" alt="" class="image--icon">
             </div>
 
-            <form class="form_calc">
-              <label for="calculate_diameter_larger">Diâmetro maior: </label>
-              <input type="text" id="calculate_diameter_larger" class="number_calc" placeholder="metro(s)
-              "> 
+            <form class="form--calc-circle">
+              <label for="circle--width">Diâmetro maior: </label>
+              <input type="text" id="circle--width"  placeholder="metro(s)
+              " class="circle--input"> 
 
-              <br>
+              <label for="circle--height">Diâmetro menor: </label>
+              <input type="text" id="circle--height"  placeholder="metro(s)
+              " class="circle--input">
 
-              <label for="calculate_length_smaller">Diâmetro menor: </label>
-              <input type="text" id="calculate_length_smaller" class="number_calc" placeholder="metro(s)
-              ">
-
-              <br>
-
-              <label for="calculate_depth_round">Profundidade: </label>
-              <input type="text" id="calculate_depth_round" class="number_calc" placeholder="metro(s)
-              ">
+              <label for="circle--depth">Profundidade: </label>
+              <input type="text" id="circle--depth"  placeholder="metro(s)
+              " class="circle--input">
             </form>
 
           </div>
 
           <!--button -- calculate Diameter Round-->
             <div class="button--form">
-              <input type="submit" value="CALCULAR" class="btn" onclick="calculateDiameterRound()"> 
+              <input type="submit" value="CALCULAR" class="btn" onclick="calculateCircle()"> 
             </div>
         </div>
       </div>

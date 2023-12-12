@@ -1,60 +1,61 @@
-@media(min-width:62rem){
-  .section{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    height: 100vh;
-  }
-}
+/*
+--Images
+--Links
+--Texts
+--form
+--section/containers
+
+*/
+
 
 /*
-  Image
+  ********
+  Images
+  *********
 */
+
 #section--image{
   width: 100%;
   height: 10rem;
   background: url("/assets/image/pexels-photo-9044049.jpeg") no-repeat top/cover;
 }
 
+.image--icon{
+  width: 1.8rem;
+}
+
+.s-formats--image{
+  background: url("/assets/image/enis-yavuz-JhcQHSBMask-unsplash.jpg") no-repeat bottom/cover;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Medium --- 768px*/
 @media(min-width:48rem){
   #section--image{
     width: 100%;
     height: 20rem;
-    background: url("/assets/image/pexels-photo-9044049.jpeg") no-repeat top/cover;
   }
 }
 
+/*Large -- 992px*/
 @media(min-width:62rem){
-#section--image{
-  width: 40rem;
-  height: 30rem;
-  background: url("/assets/image/pexels-photo-9044049.jpeg") no-repeat top/cover;
-}
-}
+ #section--image{
+  height: 34rem;
+ }  
 
-/*
-  Text
-*/
-
-.form--title{
-  color: var(--blue);
-  font-size: 1.8rem;
-  text-transform: uppercase;
-}
-
-.form--subtitle{
-  font-size: 1em;
-  margin: 0 0 1rem 0; /*Top - Right - Bottom - Left*/
-}
-
-@media(min-width:62rem){
-  .form--title{
-    font-size: 2.5rem;
+ .s-formats--image{
+    height: 50vh;
   }
 }
 
 /*
+  *******
   Links
+  *******
 */
 
 .link{
@@ -66,92 +67,21 @@
   text-decoration: underline;
 }
 
-
 /*
-  Form Buttom
+  ******
+  Texts
+  ******
 */
 
-.btn{
-  border-radius: 0.5rem;
-  background-color: var(--blue);
-  border: none;
-  width: 10rem;
-  height: 2.3rem;
-  color: white;
-  font-size: 1.2em;
+.form--title{
+  color: var(--blue);
+  font-size: 1.8em;
+  text-transform: uppercase;
 }
 
-.btn:hover{
-  background-color: var(--bluelight);
-}
-
-/*form*/
-
-.container--form{
-  width: 90%;
-  margin: auto;
-  height: 30rem;
-}
-
-input[type=text]{
-  text-align: center;
-}
-
-input[type=text], select {
-  height: 2.3rem;
-  width: 90%;
-  border: none;
-  border-radius: 0.5rem;
-  background-color: white;
+.form--subtitle{
   font-size: 1em;
-  margin: 0.5rem 0 0.5rem 0; /*Top - Right - Bottom - Left*/
-}
-
-input[type=text], select {
-  height: 2.3rem;
-  width: 100%;
-  margin: 0.8rem 0 0.8rem 0; ; /*Top - Right - Bottom - Left*/
-}
-
-@media(min-width:62rem){
-  .container--form{
-    padding: 2rem 0 0 4rem;
-    margin: 0;
-    width: 40rem;
-    height: 30rem;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.199);
-  }
-
-  input[type=text], select {
-    width: 50%;
-  }
-
-}
-
-/*
-
-*/
-
-.s-formats--image{
-  background: url("/assets/image/enis-yavuz-JhcQHSBMask-unsplash.jpg") no-repeat bottom/cover;
-  height: 30vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.s-formats--container{
-  width: 95%;
-  margin: 1rem auto;   /* Top/Bottom - Right/Left*/
-}
-
-.s-formats--form-box{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 0 1rem 0;
+  margin: 0 0 1rem 0; /*Top - Right - Bottom - Left*/
 }
 
 .s-formats--title{
@@ -173,6 +103,105 @@ input[type=text], select {
   padding: 1rem;
 }
 
+.text--icon{
+  margin: 1rem 0 0 0;/* Top - Right - Bottom - Left*/
+  font-size: 1.3em;
+  text-align: center;
+}
+
+/*Large -- 992px*/
+@media(min-width:62rem){
+ .form--title{
+   font-size: 2.5rem;
+ }  
+ 
+ .s-formats--title{
+    font-size: 2.9em;
+  }
+
+  .s-formats--subtitle{
+    font-size: 1.8em;
+    margin: 1.8rem 0 1.8rem 0; /*Top - Right - Bottom - Left*/
+  }
+}
+
+/*
+  *******
+  Form
+  *******
+*/
+
+.select, .number, .squard--input, .circle--input {
+  height: 2.3rem;
+  width: 90%;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: white;
+  font-size: 1em;
+  margin: 0.5rem 0 0.5rem 0; /*Top - Right - Bottom - Left*/
+}
+
+.btn{
+  border-radius: 0.5rem;
+  background-color: var(--blue);
+  border: none;
+  width: 10rem;
+  height: 2.3rem;
+  color: white;
+  font-size: 1.2em;
+}
+
+.btn:hover{
+  background-color: var(--bluelight);
+}
+
+.button--form{   
+  margin: 1rem 0 1rem 0; /* Top - Right - Bottom - Left*/
+}
+
+@media(min-width:48rem){
+  .form--calc-circle, .form--calc-squard, .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button--form{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 2rem 0; /* Top - Right - Bottom - Left*/
+  }
+}
+
+@media(min-width:48rem){
+
+  .button--form{
+    display: flex;
+    justify-content: start;
+  }
+}
+
+/*Section/containers*/
+.section{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-formats--container{
+  width: 95%;
+  margin: 1rem auto;   /* Top/Bottom - Right/Left*/
+}
+
+.s-formats--form-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0 1rem 0; /*Top - Right - Bottom - Left*/
+}
+
 .circle, .square{
   width: 7rem;
   height: 7rem;
@@ -187,56 +216,58 @@ input[type=text], select {
   border-radius: 7rem;
 }
 
-.image--icon{
-  width: 1.8rem;
+.s--box-text{
+  padding: 0.5rem;
 }
 
-.text--icon{
-  margin: 1rem 0 0 0;/* Top - Right - Bottom - Left*/
-  font-size: 1.3em;
-  text-align: center;
-}
-
-.button--form{   
-  display: flex;
-  justify-content: center;
-  margin: 1rem 0 1.5rem 0; /* Top - Right - Bottom - Left*/
-}
-
-
-@media(min-width:62rem){
-  .s-formats--image{
-    height: 70vh;
-  }
-
-  .s-formats--title{
-    font-size: 2.9em;
-  }
-
-  .s-formats--subtitle{
-    font-size: 1.8em;
-    margin: 1.8rem 0 1.8rem 0; /*Top - Right - Bottom - Left*/
-  }
-
-  .s-formats--container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1rem;
-    width: 90%;
-    margin: 2rem auto;    /* Top/Bottom - Right/Left*/
-    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.096);
-  }
+/*Medium --- 768px*/
+@media(min-width:48rem){
+  .s--box-text{
+    padding: 2rem;
+  }  
 
   .s-formats--form-box{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 3rem;
     padding: 1rem;
+  }  
+}
+
+/*Large --- 992px*/
+@media(min-width:68rem){
+  .s-formats--container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    width: 100%;
+    margin: 2rem auto;    /* Top/Bottom - Right/Left*/
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.096);
   }
 
-  .button--form{
-    margin: 1rem 0 2rem 0; /* Top - Right - Bottom - Left*/
+  .s--container{
+    margin: 0;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.199);
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 0 0 2rem 0; /*Top - Right - Bottom - Left*/
+  } 
+
+  .s--box-text{
+    padding: 3rem;
   }
 }
+
+/*
+
+Foto de Pixabay: https://www.pexels.com/pt-br/foto/corpo-de-agua-261403/
+
+Foto de Kindel Media: https://www.pexels.com/pt-br/foto/aereo-antena-garoto-menino-9044048/
+
+Foto de Kindel Media: https://www.pexels.com/pt-br/foto/mar-aberto-garoto-menino-rapaz-9044071/
+
+*/

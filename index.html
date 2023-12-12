@@ -17,55 +17,86 @@
 </head>
 <body class="body">
   <main class="main">
+
     <section class="section">
 
-      <div  id="section--image">
-      <!--Image in CSS-->
-      </div>
+      <div class="s--container">
 
-      <div class="container--form">
+        <div  id="section--image">
+          <!--Image in CSS-->
+        </div>
 
-        <h2 class="form--title">
-          Calculadora
-        </h2>
-        <p class="form--subtitle">
-          Aprenda a calcular o volume de água da piscina e seja preciso na quantidade de produto para o tratamento.
-        </p>
-
-        <form class="form">
-          <label for="select_products" class="select">SELECIONE O PRODUTO</label> 
-          <select name="select" id="select_products" class="select" >
-            <option value="">Selecione</option>
-            <option value="Clarificante"  > GENCO® Clarificante e Auxiliar de Filtração</option>
-            <option value="algicidachoque">GENCO® ALGICIDA DE CHOQUE</option>
-            <option value="algicidamanutencao">GENCO® ALGICIDA DE MANUTENÇÃO</option>
-            <option value="algicida sem cobre">GENCO® ALGICIDA SEM COBRE</option>
-            <option value="sulfatodealuminio">GENCO® Sulfato de Alumínio </option>
-            <option value="gloromultiacao">GENCO® L.E. Cloro Granulado Múltipla Ação 3 em 1</option>
-            <option value="cloroestabilizado">GENCO® GENCLOR Cloro Granulado Estabilizado </option>
-            <option value="clorogranulado">GENCO® POOL-TRAT Cloro Granulado</option>
-            <option value="phcerto"> GENCO® PH CERTO Granulado Estabilizante de PH</option>
-            <option value="phmaisgranulado">GENCO® PH + MAIS Granulado Barrilha </option>
-            <option value="phmenosliquido">GENCO® PH - MENOS Líquido </option>
-            <option value="phmaisliquido">GENCO® PH + MAIS Líquido </option>
-            <opition value="inibidordemanchas">GENCO® Inibidor de Manchas e Incrustações </opition>
-          </select>
-          <br>
-
-          <label for="pool_size" class="select">QUAL O VOLUME DA SUA PISCINA?</label>
-
-          <br>
-
-          <input type="text" id="pool_size" placeholder="Mil litros" class="number">
-          <input type="submit" value="CALCULAR" class="btn" onclick="calculateProducts()">
-          <p>
-            Não sabe? 
-            <a href="more.html" class="link">
-              calcule o volume da sua piscina
-            </a>
+        <div class="s--box-text">
+          <h2 class="form--title">
+            Calculadora
+          </h2>
+          <p class="form--subtitle">
+            Aprenda a calcular o volume de água da piscina e seja preciso na quantidade de produto para o tratamento.
           </p>
-        </form>
+
+          <form class="form">
+            <label for="select_products">SELECIONE O PRODUTO</label> 
+            <select name="select" id="select_products" class="select" >
+
+              <option value="">Selecione</option>
+              <option value="Clarificante"  id="clarificante">
+                 GENCO® Clarificante e Auxiliar de Filtração
+              </option>
+              <option value="algicidachoque" id="algicidachoque">
+                GENCO® ALGICIDA DE CHOQUE
+              </option>
+              <option value="algicidamanutencao" id="algicidamanutencao">
+                GENCO® ALGICIDA DE MANUTENÇÃO
+              </option>
+              <option value="algicida sem cobre" id="algicida sem cobre">
+                GENCO® ALGICIDA SEM COBRE
+              </option>
+              <option value="sulfatodealuminio" id="sulfatodealuminio">
+                GENCO® Sulfato de Alumínio 
+              </option>
+              <option value="gloromultiacao" id="gloromultiacao">
+                GENCO® L.E. Cloro Granulado Múltipla Ação 3 em 1
+              </option>
+              <option value="cloroestabilizado" id="cloroestabilizado">
+                GENCO® GENCLOR Cloro Granulado Estabilizado
+              </option>
+              <option value="clorogranulado" id="clorogranulado">
+                GENCO® POOL-TRAT Cloro Granulado
+              </option>
+              <option value="phcerto" id="phcerto">
+                GENCO® PH CERTO Granulado Estabilizante de PH
+              </option>
+              <option value="phmaisgranulado" id="phmaisgranulado">
+                GENCO® PH + MAIS Granulado Barrilha
+              </option>
+              <option value="phmenosliquido" id="phmenosliquido">
+                GENCO® PH - MENOS Líquido
+              </option>
+              <option value="phmaisliquido" id="phmaisliquido">
+                GENCO® PH + MAIS Líquido
+              </option>
+              <opition value="inibidordemanchas" id="inibidordemanchas">
+                GENCO® Inibidor de Manchas e Incrustações
+              </opition>
+            </select>
+  
+            <label for="pool_size">QUAL O VOLUME DA SUA PISCINA?</label>
+            <input type="text" id="pool_size" class="number">
+  
+            <!--button-->
+            <div class="button--form">
+              <input type="submit" value="CALCULAR" class="btn" onclick="calculateProducts()">
+            </div>
+          </form>
+        </div>
       </div>
+
+      <p class="text">
+        Não sabe? 
+        <a href="more.html" class="link">
+        calcule o volume da sua piscina
+        </a>
+      </p>
     </section>
   </main>
 

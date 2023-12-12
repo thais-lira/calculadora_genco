@@ -1,47 +1,60 @@
-function calculateDiameterRound(){
-  const form = document.querySelector('.form_calc') 
-  const result = document.querySelector('.result');
-  // Redonda = diâmetro x diâmetro x profundidade média x 0,785.
+/*
+Volume da piscina quadrada =  Largura(m) x Comprimento(m) x Profundidade(m)
 
-  function pushEvent(event){
-    event.preventDefault()
+        Diâmetro Maior: 9 m
+        Diâmetro Menor: 2,3 m
+        Profundidade: 1,20 m
+        CÁLCULO: 9 x 2,3 x 1,20 = 24,84 m³
+*/ 
 
-    const roundDiameterLarger = form.querySelector('#calculate_diameter_larger').value;
-    const roundDiameterSmaller = form.querySelector('#calculate_length_smaller').value;
-    const roundDepth = form.querySelector('#calculate_depth_round').value;
+function calculateSquard(){
+  const squardWidth = document.querySelector('#squard--width').value;
+  const squardHeight = document.querySelector('#squard--height').value;
+  const squardDepth = document.querySelector('#squard--depth').value;
 
-    const round = (roundDiameterLarger * roundDiameterSmaller) * (roundDepth * 0.786);
+  const square = (squardWidth * squardHeight) * squardDepth * 1000;
+  const res = square.toFixed(2)
 
-
-  result.innerHTML +=`<p>${round}</p>`
- }
-
-
-  form.addEventListener('submit', pushEvent);
-
+  console.log(`A piscina possui ${res} Litros`);
 }
 
-calculateDiameterRound();
+calculateSquard();
 
+/*
+Volume piscina redonda = Diâmetro(m) x Diâmetro(m) x Profundidade(m) x 0,8
 
+      Diâmetro: 4,5 m
+      Profundidade: 1,20 m
+      CÁLCULO: 4,50 x 4,50 x 1,20 x 0,8 = 19.44 m³
+*/
 
-function calculateDiameterSquare(){
-  // Quadrada =  largura x comprimento x profundidade média.
-  const width = document.querySelector('#calculate_width').value;
-  const length = document.querySelector('#calculate_length').value;
-  const squardDepth = document.querySelector('#calculate_depth_squard').value;
+function calculateCircle(){
+  const circleWidth = document.querySelector('#circle--width').value;
+  const circleHeight = document.querySelector('#circle--height').value;
+  const circleDepth = document.querySelector('#circle--depth').value;
 
-  const square = (width * length) * squardDepth;
+  const square = (circleWidth * circleHeight) * (circleDepth * 0.8);
+  const total = square.toFixed(2);
 
-  console.log(square);
-
+  console.log(`A piscina possui ${total} Litros`);
 }
 
-calculateDiameterSquare();
-  
+calculateCircle();
 
+
+/*
+Piscina oval
+Volume (m³) = Diâmetro Maior(m) x Diâmetro Menor(m) x Profundidade(m) x 0,8
+
+      Diâmetro Maior: 9 m
+      Diâmetro Menor: 2,3 m
+      Profundidade: 1,20 m
+      CÁLCULO: 9 x 2,3 x 1,20 x 0,8 = 19,87 m³
+*/ 
+
+
+// Calcular quantidade de pordutos por m2
 function calculateProducts(){
-  let calculate = document.querySelectorAll('#select_products')
   // clarificante -- 3 a 6 ML (M³)
   // algicida de choque -- 5 a 7 ML (M³)
   // algicida de manutenção -- 3 a 5 ML (M³)
