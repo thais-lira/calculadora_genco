@@ -10,24 +10,26 @@
   <link rel="stylesheet" href="assets/css/reset.css">
 </head>
 <body>
+  <!-- Main content section -->
   <main id="main">
-
+    <!-- Header section -->
     <header class="header">
       <h1 class="header--title">
         Como calcular o volume da piscina
       </h1>
     </header>
-
+    <!-- Container for different pool shapes -->
     <section  class="container-fluid" id="">
       <div class="container--content">
         <div class="item--content">
-
+          <!-- Rectangular Pool -->
           <div class="item--box-text">
+            <!-- Text and result for Rectangular Pool --> 
             <h3 class="item--title">Retangular</h3>
             <div class="rectangle"></div>
             <p class="res" id="res--rectangle"></p>
           </div>
-
+          <!-- Form for Rectangular Pool -->
           <div class="item--box-form">
             <form action="" class="form--">
               <label for="rectangle--width">Largura:</label>
@@ -39,21 +41,23 @@
               <label for="rectangle--height">Profundidade: </label>
               <input type="text" id="rectangle--height" placeholder="metro(s)" class="input">
             </form>
-            <!--button -- calculate Diameter Rectangle-->
+            <!-- Button to calculate Rectangle Pool -->
             <div class="button--form">
               <input type="submit" value="CALCULAR" class="btn" onclick="calculateRectangle()"> 
             </div>    
           </div>
 
         </div>
-
+        <!-- Square Pool -->
         <div class="item--content">
+          <!-- Text and result for Square Pool -->
           <div class="item--box-text">
             <h3 class="item--title">Quadrada</h3>
             <div class="square"></div>
             <p class="res" id="res--squard"></p>  
           </div>
-
+          
+          <!-- Form for Square Pool -->
           <div class="item--box-form">
             <form action="" class="form">
               <label for="squard--width">Largura:</label>
@@ -65,21 +69,22 @@
               <label for="squard--height">Profundidade: </label>
               <input type="text" id="squard--height" placeholder="metro(s)" class="input">
             </form>
-            <!--button -- calculate Diameter Squard-->
+          <!-- Button to calculate Square Pool -->
             <div class="button--form">
             <input type="submit" value="CALCULAR" class="btn" onclick="calculateSquard()"> 
           </div>            
           </div>
 
         </div>
-
+        <!-- Oval Pool -->
         <div class="item--content">
+        <!-- Text and result for Oval Pool -->
           <div class="item--box-text">
             <h3 class="item--title">Oval</h3>
             <div class="oval"></div>
             <p class="res" id="res--oval"></p>  
           </div>
-
+          <!-- Form for Oval Pool -->
           <div class="item--box-form">
             <form action="" class="form">
               <label for="oval--width">Diamentrô Menor:</label>
@@ -91,20 +96,21 @@
               <label for="oval--height">Profundidade:</label>
               <input type="text" id="oval--height" placeholder="metro(s)" class="input">
             </form>
-            <!--button -- calculate Diameter Oval-->
+            <!-- Button to calculate Oval Pool -->
             <div class="button--form">
               <input type="submit" value="CALCULAR" class="btn" onclick="calculateOval()"> 
             </div>  
           </div>
         </div>
-
+        <!-- Circular Pool -->
         <div class="item--content">
+          <!-- Text and result for Circular Pool -->
           <div class="item--box-text">
             <h3 class="item--title">Redonda</h3>
             <div class="circle"></div>
             <p class="res" id="res--circle"></p>         
           </div>
-
+          <!-- Form for Circular Pool -->
           <div class="item--box-form">
             <form action="" class="form">
               <label for="circle--width">Largura:</label>
@@ -116,7 +122,7 @@
               <label for="circle--height">Profundidade:</label>
               <input type="text" id="circle--height" placeholder="metro(s)" class="input">
             </form>  
-            <!--button -- calculate Diameter Round-->
+            <!-- Button to calculate Circular Pool -->
             <div class="button--form">
               <input type="submit" value="CALCULAR" class="btn" onclick="calculateCircle()"> 
             </div>       
@@ -126,6 +132,7 @@
       </div>
 
     </section>
+    <!-- Additional text with a link -->
     <p class="text">
       Deseja calcular a quantidade de produto?
       <a href="index.html" class="link">Acessar</a>

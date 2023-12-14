@@ -15,29 +15,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap" rel="stylesheet">
 </head>
-<body class="body">
-  <main class="main">
-
+<body>
+  <main>
+    <!-- Main section for the calculator -->
     <section class="section">
-
+    <!-- Main container -->
       <div class="s--container">
-
+        <!-- Background image section -->
         <div  id="section--image">
-          <!--Image in CSS-->
+          <!-- Image content in CSS -->
         </div>
 
+        <!-- Text box and form -->
         <div class="s--box-text">
+          <!-- Form title -->
           <h2 class="form--title">
             Calculadora
           </h2>
+          <!-- Form subtitle -->
           <p class="form--subtitle">
             Aprenda a calcular o volume de água da piscina e seja preciso na quantidade de produto para o tratamento.
           </p>
-
+          <!-- Form for product selection and pool size input -->
           <form class="form">
+            <!-- Product selection dropdown -->
             <label for="select_products">SELECIONE O PRODUTO</label> 
             <select name="select" id="select_products" class="select" >
-
+              <!-- Product options -->
               <option value="">Selecione</option>
               <option value="Clarificante"  id="clarificante">
                  GENCO® Clarificante e Auxiliar de Filtração
@@ -79,21 +83,21 @@
                 GENCO® Inibidor de Manchas e Incrustações
               </opition>
             </select>
-  
+            <!-- Pool volume input -->
             <label for="pool_size">QUAL O VOLUME DA SUA PISCINA?</label>
-            <input type="text" id="pool_size" class="number">
+            <input type="text" id="pool_size" class="input">
   
-            <!--button-->
+            <!-- Submit button -->
             <div class="button--form">
               <input type="submit" value="CALCULAR" class="btn" onclick="calculateProducts()">
             </div>
           </form>
         </div>
       </div>
-
+    <!-- Additional text with a link -->
       <p class="text">
         Não sabe? 
-        <a href="more.html" class="link">
+        <a href="page.html" class="link">
         calcule o volume da sua piscina
         </a>
       </p>
