@@ -1,56 +1,88 @@
-/*
-Volume da piscina quadrada =  Largura(m) x Comprimento(m) x Profundidade(m)
+// Function to calculate the volume of an rectangle-shaped pool
+function calculateRectangle(){
+  // Get the width, length, and height of the rectangle-shaped pool from HTML inputs
+  const rectangleWidth = document.querySelector('#rectangle--width').value;
+  const rectangleLength = document.querySelector('#rectangle--length').value; 
+  const rectangleHeight = document.querySelector('#rectangle--height').value;
 
-        Diâmetro Maior: 9 m
-        Diâmetro Menor: 2,3 m
-        Profundidade: 1,20 m
-        CÁLCULO: 9 x 2,3 x 1,20 = 24,84 m³
-*/ 
+  // Calculate the approximate volume of the rsctangle-shaped pool using a simplified formula
+  const rectangle = (rectangleWidth * rectangleLength ) * rectangleHeight * 1000;
 
+  // Round the calculated volume to the nearest whole number
+  const res = rectangle.toFixed(0)
+
+  // Create a string with an image and the calculated volume in liters
+  const fraseComImagem = `<img id="imagemResultado" src="/assets/image/icons8-pato.png">${res} mil litros`;
+
+  // Display the string with the image and volume in the HTML element with ID 'res--circle'
+  document.getElementById("res--rectangle").innerHTML = fraseComImagem;
+}
+
+// Function to calculate the volume of an squard-shaped pool
 function calculateSquard(){
+  // Get the width, length, and height of the squard-shaped pool from HTML inputs
   const squardWidth = document.querySelector('#squard--width').value;
+  const squardLength = document.querySelector('#squard--length').value;  
   const squardHeight = document.querySelector('#squard--height').value;
-  const squardDepth = document.querySelector('#squard--depth').value;
 
-  const square = (squardWidth * squardHeight) * squardDepth * 1000;
-  const res = square.toFixed(2)
+ // Calculate the approximate volume of the squard-shaped pool using a simplified formula
+  const squard = (squardWidth * squardLength ) * squardHeight * 1000;
 
-  console.log(`A piscina possui ${res} Litros`);
+    // Round the calculated volume to the nearest whole number
+  const res = squard.toFixed(0)
+
+  // Create a string with an image and the calculated volume in liters
+  const fraseComImagem = `<img id="imagemResultado" src="/assets/image/icons8-pato.png">${res} mil litros`;
+
+  // Display the string with the image and volume in the HTML element with ID 'res--circle'
+  document.getElementById("res--squard").innerHTML = fraseComImagem;
 }
 
-calculateSquard();
+// Function to calculate the volume of an oval-shaped pool
+function calculateOval(){
+  // Get the width, length, and height of the oval-shaped pool from HTML inputs
+  const ovalWidth = document.querySelector('#oval--width').value;
+  const ovalLength = document.querySelector('#oval--length').value;  
+  const ovalHeight = document.querySelector('#oval--height').value;
 
-/*
-Volume piscina redonda = Diâmetro(m) x Diâmetro(m) x Profundidade(m) x 0,8
+  // Calculate the approximate volume of the oval-shaped pool using a simplified formula
+  const oval = (ovalWidth * ovalLength) * (ovalHeight * 0.785) * 1000;
 
-      Diâmetro: 4,5 m
-      Profundidade: 1,20 m
-      CÁLCULO: 4,50 x 4,50 x 1,20 x 0,8 = 19.44 m³
-*/
+  // Round the calculated volume to the nearest whole number
+  const res = oval.toFixed(0)
 
+  // Create a string with an image and the calculated volume in liters
+  const fraseComImagem = `<img id="imagemResultado" src="/assets/image/icons8-pato.png">${res} mil litros`;
+
+  // Display the string with the image and volume in the HTML element with ID 'res--circle'
+  document.getElementById("res--oval").innerHTML = fraseComImagem;
+}
+
+// Function to calculate the volume of a round pool
 function calculateCircle(){
+  // Get the width, length, and height of the pool from HTML inputs
   const circleWidth = document.querySelector('#circle--width').value;
+  const circleLength = document.querySelector('#circle--length').value;
   const circleHeight = document.querySelector('#circle--height').value;
-  const circleDepth = document.querySelector('#circle--depth').value;
 
-  const square = (circleWidth * circleHeight) * (circleDepth * 0.8);
-  const total = square.toFixed(2);
+  // Calculate the approximate volume of the pool using a simplified formula
+  const circle = (circleWidth * circleLength) * (circleHeight * 0.785) * 1000;
 
-  console.log(`A piscina possui ${total} Litros`);
+  // Round the calculated volume to the nearest whole number
+  const res = circle.toFixed(0);
+
+  // Create a string with an image and the calculated volume in liters
+  const fraseComImagem = `<img id="imagemResultado" src="/assets/image/icons8-pato.png">${res} mil litros`;
+
+  // Display the string with the image and volume in the HTML element with ID 'res--circle'
+  document.getElementById("res--circle").innerHTML = fraseComImagem;
 }
 
-calculateCircle();
 
 
-/*
-Piscina oval
-Volume (m³) = Diâmetro Maior(m) x Diâmetro Menor(m) x Profundidade(m) x 0,8
 
-      Diâmetro Maior: 9 m
-      Diâmetro Menor: 2,3 m
-      Profundidade: 1,20 m
-      CÁLCULO: 9 x 2,3 x 1,20 x 0,8 = 19,87 m³
-*/ 
+
+
 
 
 // Calcular quantidade de pordutos por m2
