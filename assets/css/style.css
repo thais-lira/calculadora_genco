@@ -17,7 +17,7 @@
 #section--image{
   width: 100%;
   height: 10rem;
-  background: url("/assets/image/pexels-photo-9044049.jpeg") no-repeat top/cover;
+  background: url("/assets/image/pexels-kindel-media-9044048.jpg") no-repeat right/cover;
 }
 
 .image--icon{
@@ -25,7 +25,7 @@
 }
 
 .s-formats--image{
-  background: url("/assets/image/enis-yavuz-JhcQHSBMask-unsplash.jpg") no-repeat bottom/cover;
+  background: url("/assets/image/enis-yavuz-JhcQHSBMask-unsplash.jpg") no-repeat   bottom/cover;
   height: 30vh;
   width: 100%;
   display: flex;
@@ -271,3 +271,150 @@ Foto de Kindel Media: https://www.pexels.com/pt-br/foto/aereo-antena-garoto-meni
 Foto de Kindel Media: https://www.pexels.com/pt-br/foto/mar-aberto-garoto-menino-rapaz-9044071/
 
 */
+
+/*font-family: 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body{
+  background-color: #E7ECEF;
+}
+
+#main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.header--title{
+  color:var(--blue);
+  font-size: 1.6rem;  
+  padding: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container-fluid{
+  box-shadow: 3px 3px 8px #07486842;
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container--content{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  width: 95vw;
+}
+
+.circle, .square, .oval, .rectangle{
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--bluelight);
+  border: 4px solid var(--Gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 0 0;
+}
+
+.rectangle{
+  width: 7rem;
+}
+
+.oval{
+  width: 6rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.circle {
+  border-radius: 7rem;
+}
+
+.input{
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0 0.5rem 0;
+  text-align: center;
+  border: 1px solid #074868;
+}
+
+.form--{
+  display: flex;
+  flex-direction: column; 
+}
+
+.item--title{
+  color: #074868;
+  font-size: 1.4em; 
+}
+
+.item--box-form{
+  padding: 1rem;
+  width: 100%;
+}
+
+.item--content{
+  display: flex;
+  align-items: center;
+}
+
+.item--box-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 100%;
+}
+
+
+.res{
+  width: 90%;
+  height: 2rem;
+  font-size: 1.3em;
+  font-weight: 900;
+  color: var(--Gray);
+}
+
+#imagemResultado {
+  height: 2rem; 
+  margin-right: 0.8rem;
+}
+
+/*Medium --- 768px*/
+@media(min-width:48rem){
+  .circle, .square, .oval, .rectangle{
+    width: 7rem;
+    height: 7rem;
+  }
+  
+  .rectangle{
+    width: 9rem;
+  }
+  
+  .oval{
+    width: 9rem;
+    height: 6rem;
+  }
+
+}
+
+/*Large --- 992px*/
+@media(min-width:68rem){
+  .header--title{
+    font-size: 2.5rem;  
+  }
+
+  .container--content{
+    grid-template-columns: repeat(2, 1fr);
+    width: 80vw;
+  }
+
+  .input{
+    width: 80%;
+  }
+}

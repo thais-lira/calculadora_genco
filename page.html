@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <!--link css-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+</head>
+<body>
+  <main id="main">
+
+    <header class="header">
+      <h1 class="header--title">
+        Como calcular o volume da piscina
+      </h1>
+    </header>
+
+    <section  class="container-fluid" id="">
+      <div class="container--content">
+        <div class="item--content">
+
+          <div class="item--box-text">
+            <h3 class="item--title">Retangular</h3>
+            <div class="rectangle"></div>
+            <p class="res" id="res--rectangle"></p>
+          </div>
+
+          <div class="item--box-form">
+            <form action="" class="form--">
+              <label for="rectangle--width">Largura:</label>
+              <input type="text" id="rectangle--width" placeholder="metro(s)" class="input"> 
+
+              <label for="rectangle--length">Comprimento: </label>
+              <input type="text" id="rectangle--length" placeholder="metro(s)" class="input">
+  
+              <label for="rectangle--height">Profundidade: </label>
+              <input type="text" id="rectangle--height" placeholder="metro(s)" class="input">
+            </form>
+            <!--button -- calculate Diameter Rectangle-->
+            <div class="button--form">
+              <input type="submit" value="CALCULAR" class="btn" onclick="calculateRectangle()"> 
+            </div>    
+          </div>
+
+        </div>
+
+        <div class="item--content">
+          <div class="item--box-text">
+            <h3 class="item--title">Quadrada</h3>
+            <div class="square"></div>
+            <p class="res" id="res--squard"></p>  
+          </div>
+
+          <div class="item--box-form">
+            <form action="" class="form">
+              <label for="squard--width">Largura:</label>
+              <input type="text" id="squard--width" placeholder="metro(s)" class="input"> 
+
+              <label for="squard--length">Comprimento: </label>
+              <input type="text" id="squard--length" placeholder="metro(s)" class="input">
+  
+              <label for="squard--height">Profundidade: </label>
+              <input type="text" id="squard--height" placeholder="metro(s)" class="input">
+            </form>
+            <!--button -- calculate Diameter Squard-->
+            <div class="button--form">
+            <input type="submit" value="CALCULAR" class="btn" onclick="calculateSquard()"> 
+          </div>            
+          </div>
+
+        </div>
+
+        <div class="item--content">
+          <div class="item--box-text">
+            <h3 class="item--title">Oval</h3>
+            <div class="oval"></div>
+            <p class="res" id="res--oval"></p>  
+          </div>
+
+          <div class="item--box-form">
+            <form action="" class="form">
+              <label for="oval--width">Diamentrô Menor:</label>
+              <input type="text" id="oval--width" placeholder="metro(s)" class="input"> 
+
+              <label for="oval--length">Diamentrô Maior:</label>
+              <input type="text" id="oval--length" placeholder="metro(s)" class="input">
+  
+              <label for="oval--height">Profundidade:</label>
+              <input type="text" id="oval--height" placeholder="metro(s)" class="input">
+            </form>
+            <!--button -- calculate Diameter Oval-->
+            <div class="button--form">
+              <input type="submit" value="CALCULAR" class="btn" onclick="calculateOval()"> 
+            </div>  
+          </div>
+        </div>
+
+        <div class="item--content">
+          <div class="item--box-text">
+            <h3 class="item--title">Redonda</h3>
+            <div class="circle"></div>
+            <p class="res" id="res--circle"></p>         
+          </div>
+
+          <div class="item--box-form">
+            <form action="" class="form">
+              <label for="circle--width">Largura:</label>
+              <input type="text" id="circle--width" placeholder="metro(s)" class="input"> 
+
+              <label for="circle--length">Comprimento:</label>
+              <input type="text" id="circle--length" placeholder="metro(s)" class="input">
+  
+              <label for="circle--height">Profundidade:</label>
+              <input type="text" id="circle--height" placeholder="metro(s)" class="input">
+            </form>  
+            <!--button -- calculate Diameter Round-->
+            <div class="button--form">
+              <input type="submit" value="CALCULAR" class="btn" onclick="calculateCircle()"> 
+            </div>       
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <p class="text">
+      Deseja calcular a quantidade de produto?
+      <a href="index.html" class="link">Acessar</a>
+    </p>
+  </main>
+  <script src="assets/script/script.js"></script>
+  
+</body>
+</html>
