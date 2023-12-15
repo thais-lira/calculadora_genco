@@ -1,81 +1,20 @@
 /* Import font -- Poppins do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-#main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+.main--section{
   min-height: 100vh;
-}
-
-#section--image{
-  width: 100%;
-  height: 25rem;
-  background: url("/assets/image/pexels-kindel-media-9044071.jpg") no-repeat center/cover;
-}
-
-.section{
-  height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-}
-
-.form--title{
-  color: var(--blue);
-  font-size: 1.8em;
-  text-transform: uppercase;
-}
-
-.form--subtitle{
-  font-size: 1em;
-  margin: 0 0 1rem 0; /*Top - Right - Bottom - Left*/
-}
-
-.text{
-  text-align: center;
-  padding: 1rem; 
-}
-
-.button--form{ 
-  margin: 1rem 0 1rem 0; /* Top - Right - Bottom - Left*/
-}
-
-/*Buttons*/
-
-.btn{
-  border-radius: 0.5rem;
-  background-color: var(--blue);
-  border: none;
-  width: 10rem;
-  height: 2.3rem;
-  color: white;
-  font-size: 1.2em;
-}
-  
-.btn:hover{
-  background-color: var(--bluelight);
-}
-
-/*link*/
-.link{
-  color: var(--Gray);
-  transition: all 0.5s ease-in-out;
-}
-  
-.link:hover{
-  text-decoration: underline;
+  justify-content: center;
 }
 
 /*form*/
 .input, .select{
   background-color: #fff;
-  width: 100%;
+  width: 90%;
   height: 2rem;
   border-radius: 0.5rem;
-  margin: 0.5rem 0 0.5rem 0; /*Top - Right - Bottom - Left*/
+  margin: 0.5rem 0; /*Top/Bottom - Right/Left*/
   border: 1px solid #074868;
 }
 
@@ -93,135 +32,42 @@
   flex-direction: column; 
 }
 
-.s--box-text {
-  padding: 1rem;
+/*Buttons*/
+.button--form{ 
+  margin: 1rem 0 1rem 0; /* Top - Right - Bottom - Left*/
 }
 
-.header--title{
-  color:var(--blue);
-  font-size: 1.6rem;  
-  padding: 1.5rem;
-  text-transform: uppercase;
+.btn{
+  border-radius: 0.5rem;
+  background-color: var(--blue);
+  border: none;
+  width: 10rem;
+  height: 2.3rem;
+  color: white;
+  font-size: 1.2em;
+}
+  
+.btn:hover{
+  background-color: var(--bluelight);
+}
+
+/*Footer*/
+.footer--text{
   text-align: center;
+  padding: 0.5rem 0 1rem 0;/*Top - Right - Bottom - Left*/
 }
 
-.container--content{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  width: 95vw;
-  box-shadow: 3px 3px 8px #07486842;
-  border-radius: 0.5rem;  
-  padding: 1.7rem 0 0 0; /*Top - Right - Bottom - Left*/
-}
-
-.circle, .square, .oval, .rectangle{
-  width: 5rem;
-  height: 5rem;
-  background-color: #A5D1E6;
-  border: 4px solid var(--Gray);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0 0 0; /*Top - Right - Bottom - Left*/
-}
-
-.rectangle{
-  width: 7rem;
-}
-
-.oval{
-  width: 6rem;
-  height: 5rem;
-  border-radius: 50%;
-}
-
-.circle {
-  border-radius: 7rem;
-}
-
-.item--title{
-  color: #074868;
-  font-size: 1.4em; 
-}
-
-.item--box-text{
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  width: 100%;
-}
-
-.res{
-  width: 90%;
-  height: 2rem;
-  font-size: 1.3em;
-  font-weight: 900;
+.footer--link{
   color: var(--Gray);
+  transition: all 0.5s ease-in-out;
 }
-
-#imagemResultado {
-  height: 2rem; 
-  margin: 0 0.8rem 0 0; /*Top - Right - Bottom - Left*/
-}
-
-/*Medium --- 768px*/
-@media(min-width:48rem){
-  #section--image{
-    height: 20rem;
-  }
-
-  .circle, .square, .oval, .rectangle{
-    width: 7rem;
-    height: 7rem;
-  }
   
-  .rectangle{
-    width: 9rem;
-  }
-  
-  .oval{
-    width: 9rem;
-    height: 6rem;
-  }
-
-  .item--content{
-    display: flex;
-    align-items: center;
-  }
+.footer--link:hover{
+  text-decoration: underline;
 }
 
 /*Large --- 992px*/
 @media(min-width:68rem){
-  #section--image{
-    height: 35rem;
-  }
-
-  .form--title{
-    font-size: 2.5rem;
-  } 
-
-  .s--container{
-    display: flex;
-    align-items: center;
-    width: 90vw;
-    box-shadow: 3px 3px 8px #07486854;
-    border-radius: 0.5rem;
-    overflow: hidden;
-  }
-
-  .s--box-text {
-    padding: 3rem;
-  }
-  
-  .header--title{
-    font-size: 2rem;  
-  }
-
-  .container--content{
-    grid-template-columns: repeat(2, 1fr);
-    width: 80vw;
-  }
-
   .input, .select{
     width: 80%;
   }

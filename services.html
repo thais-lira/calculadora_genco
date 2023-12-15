@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--link favicon-->
+  <link rel="shortcut icon" href="assets/image/favicon/icons.ico" type="image/x-icon">
+  <title>Calculadora</title>
+  <!--link css-->
+  <link rel="stylesheet" href="assets/css/services-style.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+  <!-- Main content section -->
+  <main class="main">
+    <!-- Header section -->
+    <header class="header">
+      <h1 class="header--title">
+        Calcule o volume de água da piscina e seja preciso na quantidade de produto para o tratamento.
+      </h1>
+    </header>
+
+    <!-- Container for different pool shapes -->
+    <section  class="main--section" id="">
+      <div class="container">
+        <div class="container--content">
+          <!-- Rectangular Pool --> 
+          <div class="box--text">
+            <!-- Text and result for Rectangular Pool --> 
+            <h3 class="shapes--title">Retangular</h3>
+            <div class="rectangle"></div>
+            <p class="res" id="res--rectangle"></p>
+          </div>
+          <!-- Form for Rectangular Pool -->
+          <div class="box--form">
+            <form action="" class="form">
+              <label for="rectangle--width">Largura:</label>
+              <input type="text" id="rectangle--width" placeholder="metro(s)" class="input"> 
+
+              <label for="rectangle--length">Comprimento: </label>
+              <input type="text" id="rectangle--length" placeholder="metro(s)" class="input">
+  
+              <label for="rectangle--height">Profundidade: </label>
+              <input type="text" id="rectangle--height" placeholder="metro(s)" class="input">
+            </form>
+            <!-- Button to calculate Rectangle Pool -->
+            <div class="button--form">
+              <input type="submit" value="CALCULAR" class="btn" onclick="calculateRectangle()"> 
+            </div>    
+          </div>
+
+        </div>
+        <!-- Square Pool -->
+        <div class="container--content">
+          <!-- Text and result for Square Pool -->
+          <div class="box--text">
+            <h3 class="shapes--title">Quadrada</h3>
+            <div class="square"></div>
+            <p class="res" id="res--squard"></p>  
+          </div>
+          
+          <!-- Form for Square Pool -->
+          <div class="box--form">
+            <form action="" class="form">
+              <label for="squard--width">Largura:</label>
+              <input type="text" id="squard--width" placeholder="metro(s)" class="input"> 
+
+              <label for="squard--length">Comprimento: </label>
+              <input type="text" id="squard--length" placeholder="metro(s)" class="input">
+  
+              <label for="squard--height">Profundidade: </label>
+              <input type="text" id="squard--height" placeholder="metro(s)" class="input">
+            </form>
+          <!-- Button to calculate Square Pool -->
+            <div class="button--form">
+            <input type="submit" value="CALCULAR" class="btn" onclick="calculateSquard()"> 
+          </div>            
+          </div>
+
+        </div>
+        <!-- Oval Pool -->
+        <div class="container--content">
+        <!-- Text and result for Oval Pool -->
+          <div class="box--text">
+            <h3 class="shapes--title">Oval</h3>
+            <div class="oval"></div>
+            <p class="res" id="res--oval"></p>  
+          </div>
+          <!-- Form for Oval Pool -->
+          <div class="box--form">
+            <form action="" class="form">
+              <label for="oval--width">Diamentrô Menor:</label>
+              <input type="text" id="oval--width" placeholder="metro(s)" class="input"> 
+
+              <label for="oval--length">Diamentrô Maior:</label>
+              <input type="text" id="oval--length" placeholder="metro(s)" class="input">
+  
+              <label for="oval--height">Profundidade:</label>
+              <input type="text" id="oval--height" placeholder="metro(s)" class="input">
+            </form>
+            <!-- Button to calculate Oval Pool -->
+            <div class="button--form">
+              <input type="submit" value="CALCULAR" class="btn" onclick="calculateOval()"> 
+            </div>  
+          </div>
+        </div>
+        <!-- Circular Pool -->
+        <div class="container--content">
+          <!-- Text and result for Circular Pool -->
+          <div class="box--text">
+            <h3 class="shapes--title">Redonda</h3>
+            <div class="circle"></div>
+            <p class="res" id="res--circle"></p>         
+          </div>
+          <!-- Form for Circular Pool -->
+          <div class="box--form">
+            <form action="" class="form">
+              <label for="circle--width">Largura:</label>
+              <input type="text" id="circle--width" placeholder="metro(s)" class="input"> 
+
+              <label for="circle--length">Comprimento:</label>
+              <input type="text" id="circle--length" placeholder="metro(s)" class="input">
+  
+              <label for="circle--height">Profundidade:</label>
+              <input type="text" id="circle--height" placeholder="metro(s)" class="input">
+            </form>  
+            <!-- Button to calculate Circular Pool -->
+            <div class="button--form">
+              <input type="submit" value="CALCULAR" class="btn" onclick="calculateCircle()"> 
+            </div>       
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+  <footer>
+    <!-- Additional text with a link -->
+    <p class="footer--text">
+      Deseja calcular a quantidade de produto?
+      <a href="index.html" class="footer--link">Acessar</a>
+    </p>
+  </footer>
+
+  <!-- Importando Scripts -->
+  <script src="assets/script/ovalPool.js"></script>
+  <script src="assets/script/roundPool.js"></script>  
+  <script src="assets/script/rectanglePool.js"></script>
+  <script src="assets/script/squardPool.js"></script>
+  
+</body>
+</html>

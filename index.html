@@ -4,37 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link favicon-->
+  <link rel="shortcut icon" href="assets/image/favicon/icons.ico" type="image/x-icon">
   <title>Calculadora</title>
   <!--link css-->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/index-style.css">
   <link rel="stylesheet" href="assets/css/reset.css">
-  <!--link favicon-->
-  <link rel="shortcut icon" href="assets/image/favicon/icons.ico" type="image/x-icon">
-  <!--link fonts google-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <main>
+  <main class="main">
     <!-- Main section for the calculator -->
-    <section class="section">
+    <section class="main--section">
     <!-- Main container -->
-      <div class="s--container">
+      <div class="main--container">
         <!-- Background image section -->
-        <div  id="section--image">
+        <div  id="content-box--image">
           <!-- Image content in CSS -->
         </div>
 
         <!-- Text box and form -->
-        <div class="s--box-text">
+        <div id="content-box--text">
           <!-- Form title -->
           <h2 class="form--title">
             Calculadora
           </h2>
           <!-- Form subtitle -->
           <p class="form--subtitle">
-            Aprenda a calcular o volume de água da piscina e seja preciso na quantidade de produto para o tratamento.
+            Desenvolvida para simplificar a manutenção da sua piscina, oferecemos uma ferramenta prática e eficiente para que você tenha controle total sobre a quantidade de produtos para o tratamento da agua.
           </p>
           <!-- Form for product selection and pool size input -->
           <form class="form">
@@ -43,67 +40,64 @@
             <select name="select" id="select_products" class="select" >
               <!-- Product options -->
               <option value="">Selecione</option>
-              <option value="Clarificante"  id="clarificante">
+              <option value="clarificante"  id="clarificante">
                  GENCO® Clarificante e Auxiliar de Filtração
               </option>
-              <option value="algicidachoque" id="algicidachoque">
+              <option value="algicida_choque" id="algicida_choque">
                 GENCO® ALGICIDA DE CHOQUE
               </option>
-              <option value="algicidamanutencao" id="algicidamanutencao">
+              <option value="algicida_manutencao" id="algicida_manutencao">
                 GENCO® ALGICIDA DE MANUTENÇÃO
               </option>
-              <option value="algicida sem cobre" id="algicida sem cobre">
+              <option value="algicida_cobre" id="algicida_cobre">
                 GENCO® ALGICIDA SEM COBRE
               </option>
-              <option value="sulfatodealuminio" id="sulfatodealuminio">
+              <option value="sulfato_aluminio" id="sulfato_aluminio">
                 GENCO® Sulfato de Alumínio 
               </option>
-              <option value="gloromultiacao" id="gloromultiacao">
+              <option value="cloro_granulado" id="cloro_granulado">
                 GENCO® L.E. Cloro Granulado Múltipla Ação 3 em 1
               </option>
-              <option value="cloroestabilizado" id="cloroestabilizado">
+              <option value="cloro_estabilizado" id="cloro_estabilizado">
                 GENCO® GENCLOR Cloro Granulado Estabilizado
               </option>
-              <option value="clorogranulado" id="clorogranulado">
+              <option value="cloro_poll-trat" id="cloro_poll-trat">
                 GENCO® POOL-TRAT Cloro Granulado
               </option>
-              <option value="phcerto" id="phcerto">
+              <option value="ph_granulado" id="ph_granulado">
                 GENCO® PH CERTO Granulado Estabilizante de PH
               </option>
-              <option value="phmaisgranulado" id="phmaisgranulado">
+              <option value="ph_mais-granulado" id="ph_mais-granulado">
                 GENCO® PH + MAIS Granulado Barrilha
               </option>
-              <option value="phmenosliquido" id="phmenosliquido">
+              <option value="ph_menos-liquido" id="ph_menos-liquido">
                 GENCO® PH - MENOS Líquido
               </option>
-              <option value="phmaisliquido" id="phmaisliquido">
+              <option value="ph_mais-liquido" id="ph_mais-liquido">
                 GENCO® PH + MAIS Líquido
               </option>
-              <opition value="inibidordemanchas" id="inibidordemanchas">
-                GENCO® Inibidor de Manchas e Incrustações
-              </opition>
             </select>
             <!-- Pool volume input -->
             <label for="pool_size">QUAL O VOLUME DA SUA PISCINA?</label>
             <input type="text" id="pool_size" class="input">
+            <!-- Additional text with a link -->
+            <p class=""> Não sabe? <a href="services.html" class="footer--link"> calcule o volume da sua piscina</a>
+            </p>
   
             <!-- Submit button -->
             <div class="button--form">
-              <input type="submit" value="CALCULAR" class="btn" onclick="calculateProducts()">
+              <input type="button" value="CALCULAR" class="btn" onclick="calculateProducts()">
             </div>
           </form>
+          <p class="txt--quantity" id="quantity_of_products--max"></p>
+          <p class="txt--quantity" id="quantity_of_products--min"></p>
         </div>
       </div>
-    <!-- Additional text with a link -->
-      <p class="text">
-        Não sabe? 
-        <a href="page.html" class="link">
-        calcule o volume da sua piscina
-        </a>
-      </p>
     </section>
   </main>
-
-<script src="assets/script/script.js"></script>
+  
+  <!-- Importando Scripts -->
+  <script src="assets/script/productQuantities.js"></script>
+  
 </body>
 </html>

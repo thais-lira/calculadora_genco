@@ -12,14 +12,14 @@ a{
 :root{
   --lightGray: #E7ECEF;
   --Gray: #79868d;
-  --blue: #296480;
-  --bluelight: #28414D;
+  --blue: #3B6C8A;
+  --bluelight: #143D57;
 }
 
-.main, body{
-  background-color: var(--lightGray);
-  line-height: 2;
+body{
+  background-color: var(--lightGray);  
 }
 
-
-
+.main--section{
+  line-height: 1.8; 
+}
